@@ -1,7 +1,11 @@
+# api.py
+
 from flask import Flask, request, jsonify
 from model import LanguageModel
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # 启用 CORS 支持
 
 # 初始化语言模型
 model = LanguageModel()
@@ -16,14 +20,14 @@ def ask():
         return jsonify({"error": "没有提供问题"}), 400
 
     # 获取模型的回答
-    response = model.get_unique_answer(question)
+    response = model.generate_answer(question)
 
     # 返回回答
     return jsonify({"answer": response})
 
 @app.route('/')
 def home():
-    return ""
+    return "请打开文件目录中的HTML文件在浏览器中对话。"
 
 if __name__ == "__main__":
     print("服务已启动，正在监听端口 5000...")
