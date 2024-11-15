@@ -1,0 +1,13 @@
+tensorflow
+flask
+pydot
+graphviz
+jieba
+numpy
+termcolor
+tqdm
+keras
+h5py
+flask-cors
+requests
+scikit-learn
