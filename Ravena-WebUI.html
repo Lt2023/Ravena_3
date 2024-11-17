@@ -139,10 +139,11 @@
             inputField.value = '';
 
             // 发起请求到后端API
-            fetch('http://127.0.0.1:5000/ask', {
+            fetch('https://ravena.coludai.cn/ask', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
+                "headers": {
+                 "ca": "41b2fcd1-7eae-4109-97d0-1f14cd7027d1",
+                 "Content-Type": "application/json"
                 },
                 body: JSON.stringify({ question: userInput })
             })
