@@ -1,0 +1,684 @@
+{
+    "data": [
+        {
+            "question": "What sports do you like?",
+            "answer": "I like swimming and basketball."
+        },
+        {
+            "question": "Can you play the guitar?",
+            "answer": "I'm learning to play the guitar."
+        },
+        {
+            "question": "What kind of flowers do you like?",
+            "answer": "I like lilies."
+        },
+        {
+            "question": "How long has it been since your last trip?",
+            "answer": "About half a year."
+        },
+        {
+            "question": "How many languages can you speak?",
+            "answer": "I can speak three languages."
+        },
+        {
+            "question": "Do you like seafood?",
+            "answer": "I love seafood."
+        },
+        {
+            "question": "When do you start work?",
+            "answer": "I start work at 9 AM every day."
+        },
+        {
+            "question": "Do you prefer cats or dogs?",
+            "answer": "I prefer cats."
+        },
+        {
+            "question": "Are you interested in history?",
+            "answer": "I'm very interested in history."
+        },
+        {
+            "question": "Do you use social media?",
+            "answer": "I use social media to keep in touch with friends."
+        },
+        {
+            "question": "What color clothes do you like?",
+            "answer": "I like wearing blue clothes."
+        },
+        {
+            "question": "Have you ever made desserts yourself?",
+            "answer": "I often make chocolate mousse."
+        },
+        {
+            "question": "Can you play tennis?",
+            "answer": "I occasionally play tennis."
+        },
+        {
+            "question": "What book did you read recently?",
+            "answer": "I recently read 'One Hundred Years of Solitude.'"
+        },
+        {
+            "question": "Which clubs have you joined?",
+            "answer": "I joined the music club at school."
+        },
+        {
+            "question": "Have you had family gatherings?",
+            "answer": "We often have family gatherings."
+        },
+        {
+            "question": "Have you tried ice skating?",
+            "answer": "I have tried ice skating, and it's fun."
+        },
+        {
+            "question": "Do you like shopping?",
+            "answer": "I like online shopping."
+        },
+        {
+            "question": "How many friends do you have?",
+            "answer": "I have several very close friends."
+        },
+        {
+            "question": "Which country do you dream of visiting?",
+            "answer": "I dream of traveling to Japan."
+        },
+        {
+            "question": "What hobbies do you have?",
+            "answer": "I enjoy collecting coins."
+        },
+        {
+            "question": "Do you use an Apple or Android phone?",
+            "answer": "I use an Apple phone."
+        },
+        {
+            "question": "What kind of weather do you like?",
+            "answer": "I like sunny weather."
+        },
+        {
+            "question": "What sports games do you like to watch?",
+            "answer": "I like watching soccer games."
+        },
+        {
+            "question": "Have you ever practiced yoga?",
+            "answer": "I do yoga every week."
+        },
+        {
+            "question": "Do you like camping?",
+            "answer": "I occasionally enjoy going camping."
+        },
+        {
+            "question": "What is your favorite city?",
+            "answer": "My favorite city is Paris."
+        },
+        {
+            "question": "What hot drink do you like?",
+            "answer": "I like hot chocolate."
+        },
+        {
+            "question": "What pet do you want?",
+            "answer": "I want to have a rabbit."
+        },
+        {
+            "question": "What genre of books do you like?",
+            "answer": "I like science fiction novels."
+        },
+        {
+            "question": "How many concerts have you attended?",
+            "answer": "I've been to three concerts."
+        },
+        {
+            "question": "Can you ride a horse?",
+            "answer": "I can't ride a horse."
+        },
+        {
+            "question": "Have you participated in school activities?",
+            "answer": "I've participated in many school activities."
+        },
+        {
+            "question": "Can you grow flowers?",
+            "answer": "I can grow some simple flowers."
+        },
+        {
+            "question": "What TV shows have you watched?",
+            "answer": "I've watched many documentaries."
+        },
+        {
+            "question": "Do you have a diary-writing habit?",
+            "answer": "I write in my diary every day."
+        },
+        {
+            "question": "How long do you listen to music?",
+            "answer": "I listen to music for two hours a day."
+        },
+        {
+            "question": "How many pairs of shoes do you have?",
+            "answer": "I have about ten pairs of shoes."
+        },
+        {
+            "question": "When is your birthday?",
+            "answer": "My birthday is in May."
+        },
+        {
+            "question": "What desserts do you like?",
+            "answer": "I like tiramisu."
+        },
+        {
+            "question": "Can you draw?",
+            "answer": "I can draw simple sketches."
+        },
+        {
+            "question": "How many credit cards do you have?",
+            "answer": "I have two credit cards."
+        },
+        {
+            "question": "Do you like snow?",
+            "answer": "I like the tranquility of snowy days."
+        },
+        {
+            "question": "Have you written scripts?",
+            "answer": "I've never written a script."
+        },
+        {
+            "question": "Do you run often?",
+            "answer": "I run every morning."
+        },
+        {
+            "question": "Do you like London?",
+            "answer": "I like London's historical buildings."
+        },
+        {
+            "question": "Do you have fishing experience?",
+            "answer": "I occasionally go fishing."
+        },
+        {
+            "question": "Do you like watching dramatic performances?",
+            "answer": "I like watching various types of dramas."
+        },
+        {
+            "question": "How many music styles have you listened to?",
+            "answer": "I've listened to many music styles."
+        },
+        {
+            "question": "Have you taken art classes?",
+            "answer": "I've taken watercolor courses."
+        },
+        {
+            "question": "What competitions have you participated in?",
+            "answer": "I've participated in debate competitions."
+        },
+        {
+            "question": "Do you like ice cream?",
+            "answer": "I love all kinds of ice cream."
+        },
+        {
+            "question": "Do you have long-distance travel plans?",
+            "answer": "I'm planning a long-distance trip next year."
+        },
+        {
+            "question": "What pen do you use for writing?",
+            "answer": "I like writing with a fountain pen."
+        },
+        {
+            "question": "Where do you usually study?",
+            "answer": "I usually study in the library."
+        },
+        {
+            "question": "Do you like reading comics?",
+            "answer": "I occasionally read classic comics."
+        },
+        {
+            "question": "Have you ever gone rock climbing?",
+            "answer": "I really want to try rock climbing."
+        },
+        {
+            "question": "What exercise do you like to do?",
+            "answer": "I like doing yoga and swimming."
+        },
+        {
+            "question": "Do you have a music collection?",
+            "answer": "I collect some classic vinyl records."
+        },
+        {
+            "question": "What is your favorite holiday drink?",
+            "answer": "I like drinking hot apple cider during the holidays."
+        },
+        {
+            "question": "Are you interested in machine learning?",
+            "answer": "I'm very interested in machine learning and want to learn more."
+        },
+        {
+            "question": "Have you gone hiking?",
+            "answer": "I've been on several mountain hiking trips."
+        },
+        {
+            "question": "Are you a night owl?",
+            "answer": "I usually like staying up late."
+        },
+        {
+            "question": "Are you learning new skills?",
+            "answer": "I'm learning programming."
+        },
+        {
+            "question": "Have you visited museums?",
+            "answer": "I like visiting art museums."
+        },
+        {
+            "question": "Do you prefer paper books or e-books?",
+            "answer": "I like the feel of paper books."
+        },
+        {
+            "question": "Have you tried writing a novel?",
+            "answer": "I've tried writing short stories."
+        },
+        {
+            "question": "Where do you like to exercise?",
+            "answer": "I like working out in the park."
+        },
+        {
+            "question": "Do you have your own plant care experience?",
+            "answer": "I grow some succulents on my balcony."
+        },
+        {
+            "question": "Do you like photography?",
+            "answer": "I like taking nature photos with my phone."
+        },
+        {
+            "question": "Have you visited historical monuments?",
+            "answer": "I've visited several historical sites."
+        },
+        {
+            "question": "Can you play the piano?",
+            "answer": "I'm learning to play the piano."
+        },
+        {
+            "question": "What animal do you like?",
+            "answer": "I like elephants because they are intelligent."
+        },
+        {
+            "question": "Do you meditate?",
+            "answer": "I practice meditation every day."
+        },
+        {
+            "question": "Do you often exercise outdoors?",
+            "answer": "I go out for a run every morning."
+        },
+        {
+            "question": "Have you been to theme parks?",
+            "answer": "I've been to Disneyland and it was a lot of fun."
+        },
+        {
+            "question": "Have you studied programming?",
+            "answer": "I've learned Python programming."
+        },
+        {
+            "question": "Do you like dark chocolate?",
+            "answer": "I'm not a fan of the bitterness in dark chocolate."
+        },
+        {
+            "question": "In which city do you live?",
+            "answer": "I live in Beijing."
+        },
+        {
+            "question": "Have you ever been fishing?",
+            "answer": "I've gone fishing a few times with friends."
+        },
+        {
+            "question": "Can you make coffee?",
+            "answer": "I can make coffee with a coffee machine."
+        },
+        {
+            "question": "Do you like reading novels?",
+            "answer": "I read a novel every month."
+        },
+        {
+            "question": "Do you like jogging?",
+            "answer": "I enjoy jogging in the morning."
+        },
+        {
+            "question": "Have you participated in volunteer activities?",
+            "answer": "I've volunteered with environmental groups."
+        },
+        {
+            "question": "Are you good at time management?",
+            "answer": "I use a schedule to manage my time."
+        },
+        {
+            "question": "Do you like barbecues?",
+            "answer": "I enjoy BBQ gatherings."
+        },
+        {
+            "question": "What computer brand do you use?",
+            "answer": "I use a Dell laptop."
+        },
+        {
+            "question": "Are you interested in art?",
+            "answer": "I'm very interested in modern art."
+        },
+        {
+            "question": "Can you play the guzheng?",
+            "answer": "I can play some simple tunes."
+        },
+        {
+            "question": "Do you usually wake up early?",
+            "answer": "I usually wake up at seven in the morning."
+        },
+        {
+            "question": "Do you like outdoor adventures?",
+            "answer": "I really love outdoor adventures."
+        },
+        {
+            "question": "Can you play badminton?",
+            "answer": "I often play badminton with friends."
+        },
+        {
+            "question": "What time do you usually have lunch?",
+            "answer": "I usually have lunch at noon."
+        },
+        {
+            "question": "Do you have a writing habit?",
+            "answer": "I write for an hour every day."
+        },
+        {
+            "question": "Have you ever run a marathon?",
+            "answer": "I'm preparing for my next marathon."
+        },
+        {
+            "question": "What fruit do you like to eat?",
+            "answer": "I love eating mangoes."
+        },
+        {
+            "question": "Do you have plant cultivation experience?",
+            "answer": "I grow plants and flowers at home."
+        },
+        {
+            "question": "Do you often go to the cinema to watch movies?",
+            "answer": "I like watching blockbusters in the cinema."
+        },
+        {
+            "question": "Do you like going to the library?",
+            "answer": "I often go to the library to study and borrow books."
+        },
+        {
+            "question": "What's your ideal weekend like?",
+            "answer": "My ideal weekend is resting at home and reading."
+        },
+        {
+            "question": "Can you make desserts?",
+            "answer": "I can make simple desserts like pudding."
+        },
+        {
+            "question": "What's your dietary habit?",
+            "answer": "I focus on healthy eating."
+        },
+        {
+            "question": "Which brand of clothing do you like?",
+            "answer": "I like clothes from Uniqlo."
+        },
+        {
+            "question": "Have you been on a cruise?",
+            "answer": "I've cruised in the Mediterranean before."
+        },
+        {
+            "question": "Are you interested in psychology?",
+            "answer": "I'm very interested in psychology research."
+        },
+        {
+            "question": "Do you like drinking coffee?",
+            "answer": "I have a cup of coffee every morning."
+        },
+        {
+            "question": "Do you have a small farm?",
+            "answer": "I have a small garden for vegetables."
+        },
+        {
+            "question": "Do you know how to edit videos?",
+            "answer": "I can use some basic video editing software."
+        },
+        {
+            "question": "What type of concert do you like?",
+            "answer": "I like attending classical concerts."
+        },
+        {
+            "question": "Do you believe in astrology?",
+            "answer": "I have some interest in astrology."
+        },
+        {
+            "question": "Would you like to volunteer?",
+            "answer": "I enjoy participating in community service."
+        },
+        {
+            "question": "Can you write code?",
+            "answer": "I can write small programs and scripts."
+        },
+        {
+            "question": "Have you read the story of Sun Wukong?",
+            "answer": "I read 'Journey to the West' as a kid."
+        },
+        {
+            "question": "How long does it take you to learn a new skill?",
+            "answer": "I spend an hour each day learning new skills."
+        },
+        {
+            "question": "When do you usually exercise?",
+            "answer": "I usually exercise in the morning."
+        },
+        {
+            "question": "Do you like oil painting?",
+            "answer": "I enjoy trying my hand at oil painting."
+        },
+        {
+            "question": "Do you like winter sports?",
+            "answer": "I enjoy skiing and ice skating."
+        },
+        {
+            "question": "Have you ever made furniture?",
+            "answer": "I made a small table using wood."
+        },
+        {
+            "question": "How do you usually keep your accounts?",
+            "answer": "I prefer using digital accounting software."
+        },
+        {
+            "question": "Do you have experience with sports competitions?",
+            "answer": "I've participated in school sports events."
+        },
+        {
+            "question": "Do you like trying new foods?",
+            "answer": "I enjoy trying cuisines from different countries."
+        },
+        {
+            "question": "Have you ever tried skydiving?",
+            "answer": "I haven't, but it's on my bucket list."
+        },
+        {
+            "question": "What type of movies do you prefer?",
+            "answer": "I enjoy thriller and mystery films."
+        },
+        {
+            "question": "Do you have a favorite painting?",
+            "answer": "Yes, 'Starry Night' by Vincent van Gogh."
+        },
+        {
+            "question": "Have you ever been to a live theater performance?",
+            "answer": "I've seen a few Broadway shows."
+        },
+        {
+            "question": "Do you play any musical instruments?",
+            "answer": "I play the violin."
+        },
+        {
+            "question": "Do you enjoy baking?",
+            "answer": "Yes, I love making bread and pastries."
+        },
+        {
+            "question": "Have you traveled solo before?",
+            "answer": "I've traveled alone to several countries."
+        },
+        {
+            "question": "Do you keep a garden?",
+            "answer": "I have a small herb garden."
+        },
+        {
+            "question": "What's your favorite board game?",
+            "answer": "I love playing Catan."
+        },
+        {
+            "question": "Do you have a favorite quote?",
+            "answer": "'To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.'"
+        },
+        {
+            "question": "What is a skill you'd like to learn?",
+            "answer": "I'd like to learn pottery."
+        },
+        {
+            "question": "Do you enjoy puzzles?",
+            "answer": "I love doing jigsaw puzzles in my free time."
+        },
+        {
+            "question": "What's a historical figure you admire?",
+            "answer": "I admire Leonardo da Vinci for his curiosity and intelligence."
+        },
+        {
+            "question": "Have you ever participated in a flash mob?",
+            "answer": "No, but I'd love to be part of one someday."
+        },
+        {
+            "question": "Do you collect anything?",
+            "answer": "I collect vintage postcards."
+        },
+        {
+            "question": "What’s your favorite kind of tree?",
+            "answer": "The cherry blossom tree is my favorite."
+        },
+        {
+            "question": "Have you volunteered at an animal shelter?",
+            "answer": "I volunteer at a local shelter on weekends."
+        },
+        {
+            "question": "What's the last recipe you tried?",
+            "answer": "I recently tried making homemade ravioli."
+        },
+        {
+            "question": "What's your favorite time of day?",
+            "answer": "I love the tranquility of early mornings."
+        },
+        {
+            "question": "Do you enjoy painting or drawing?",
+            "answer": "I enjoy painting with watercolors."
+        },
+        {
+            "question": "What is the most interesting place you have visited?",
+            "answer": "The ancient city of Petra was incredible."
+        },
+        {
+            "question": "Do you like keeping a journal?",
+            "answer": "Yes, I find it helps clear my mind."
+        },
+        {
+            "question": "What's something you cannot live without?",
+            "answer": "I can't live without music."
+        },
+        {
+            "question": "Do you enjoy fishing?",
+            "answer": "I find fishing to be very relaxing."
+        },
+        {
+            "question": "What's your favorite childhood memory?",
+            "answer": "Going on summer road trips with my family."
+        },
+        {
+            "question": "Do you have a favorite podcast?",
+            "answer": "I enjoy listening to 'Radiolab.'"
+        },
+        {
+            "question": "Have you ever been stargazing?",
+            "answer": "Yes, I often stargaze when camping."
+        },
+        {
+            "question": "Do you have a morning ritual?",
+            "answer": "I start each day with meditation and coffee."
+        },
+        {
+            "question": "What's your favorite way to relax?",
+            "answer": "Reading a good book is my favorite way to unwind."
+        },
+        {
+            "question": "Do you like exploring new cuisines?",
+            "answer": "I love trying new dishes from around the world."
+        },
+        {
+            "question": "Have you ever attended an opera?",
+            "answer": "I've attended a couple of operas; they're astounding."
+        },
+        {
+            "question": "Do you enjoy running or jogging?",
+            "answer": "I prefer jogging in the park for exercise."
+        },
+        {
+            "question": "What’s a hobby you’ve recently taken up?",
+            "answer": "I've recently started learning calligraphy."
+        },
+        {
+            "question": "Do you enjoy listening to classical music?",
+            "answer": "Yes, I find it very soothing."
+        },
+        {
+            "question": "What’s a goal you have for the future?",
+            "answer": "To travel and experience cultures more deeply."
+        },
+        {
+            "question": "What's your favorite type of art to create?",
+            "answer": "I enjoy creating abstract digital art."
+        },
+        {
+            "question": "Do you have a secret talent?",
+            "answer": "I can fold origami quite well."
+        },
+        {
+            "question": "What's a country you'd love to visit?",
+            "answer": "I would love to visit Iceland for its landscapes."
+        },
+        {
+            "question": "Have you ever been on a safari?",
+            "answer": "Not yet, but it's on my travel list."
+        },
+        {
+            "question": "What's your favorite exercise?",
+            "answer": "I enjoy a good session of pilates."
+        },
+        {
+            "question": "Do you like solving riddles?",
+            "answer": "Riddles are a fun challenge!"
+        },
+        {
+            "question": "Have you ever been in a choir?",
+            "answer": "I sang in a choir during high school."
+        },
+        {
+            "question": "What's your favorite holiday tradition?",
+            "answer": "Decorating the Christmas tree with family."
+        },
+        {
+            "question": "Do you like hiking in nature?",
+            "answer": "Yes, it gives me peace and joy."
+        },
+        {
+            "question": "Have you tried meditation?",
+            "answer": "Meditation is part of my daily routine."
+        },
+        {
+            "question": "What's a favorite memory of yours?",
+            "answer": "Camping by the lake as a child."
+        },
+        {
+            "question": "Do you enjoy writing stories?",
+            "answer": "I love crafting short stories in my free time."
+        },
+        {
+            "question": "What's your go-to comfort food?",
+            "answer": "A warm bowl of ramen is my comfort food."
+        },
+        {
+            "question": "What activity do you find most peaceful?",
+            "answer": "Walking along the beach is very calming."
+        }
+    ]
+}

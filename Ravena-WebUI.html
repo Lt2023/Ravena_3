@@ -106,7 +106,7 @@
     </div>
     <div class="content" id="chat">
         <div class="message">
-            <div class="ai-message">你好！我是Ravena3</div>
+            <div class="ai-message">你好！我是Ravena</div>
         </div>
     </div>
     <div class="input">
@@ -139,10 +139,10 @@
             inputField.value = '';
 
             // 发起请求到后端API
-            fetch('https://ravena.coludai.cn/ask', {
+            fetch('http://localhost:5000/ask', {
                 method: 'POST',
                 "headers": {
-                 "ca": "",
+                 "ca": "820d0663-42ed-47eb-8513-94da54b6fc10",
                  "Content-Type": "application/json"
                 },
                 body: JSON.stringify({ question: userInput })

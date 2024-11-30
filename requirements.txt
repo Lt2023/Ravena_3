@@ -11,3 +11,8 @@ h5py
 flask-cors
 requests
 scikit-learn
+torch.nn
+torch
+torch.optim
+pydub
+sounddevice

@@ -1,4 +1,4 @@
-# Ravena_3
+# Ravena_4
 
 #  🚩项目简介
 
@@ -92,6 +92,7 @@ pip install -r requirements.txt
 ├── train.py              # 训练脚本
 ├── train_data.json       # 训练数据文件（包含 question 和 answer）
 ├── test.py               # 生成图片文件主要用于,查看模型性能
+├── Ravena-WebUI.html     # 模型前端界面要求运行API.py
 ├── requirements.txt      # 项目依赖文件
 ├── Ravena_tokenizer_output.txt  # 序列Tokenizer对象可查看的版本通过test.py生成
 ├── Tokenizer.py          # 生成可查看的 Tokenizer 

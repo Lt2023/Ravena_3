@@ -54,7 +54,7 @@ def ask():
 
 @app.route('/')
 def home():
-    return "Ravena_3由😘刘时安开发"
+    return "Ravena_4由😘刘时安&ColudAI开发"
 
 if __name__ == "__main__":
     print("服务已启动，正在监听端口 5000...")
