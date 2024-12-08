@@ -83,6 +83,39 @@ pip install -r requirements.txt
 训练模型：运行 train.py 文件来开始训练，默认情况下，模型会进行 500 轮训练。如果您希望修改训练轮数，可以调整 model.py 中的 ```patience=500```
 交互使用：训练完成后，程序会进入一个交互模式，您可以输入问题并接收模型生成的回答。输入 exit 可退出程序。生成回答当模型训练完成后，您可以通过交互模式提问，模型会返回生成的回答。生成的回答将被逐步显示，每个部分都会用 "回答1", "回答2" 等标号表示，直到回答完整为止。
 
+
+## 🧑‍🏫 如何微调模型
+
+微调模型的步骤如下：
+微调（Fine-Tuning）是指在已有模型的基础上，使用新的数据集或更小的学习率进行训练。对于这个项目，微调模型可以通过以下几种方式进行：
+
+### 1. 准备微调数据集：
+微调模型需要您提供一个新的数据集，这个数据集应包含新的问答对，并且格式必须与原始训练数据格式相同（question 和 answer 字段）。请参考上面提供的数据格式来准备您的数据集。
+
+### 2. 加载已有模型：
+在微调之前，我们需要加载已经训练好的模型。在 `train.py` 中，您可以指定已有模型文件进行加载。例如，如果您已经训练过模型并且保存了 `Ravena-LLM_Model.keras` 文件，可以直接加载该模型。
+
+```python
+model = LanguageModel(model_file='model/Ravena-LLM_Model.keras')
+```
+### 3. 微调参数设置：
+微调时，您可以调整一些参数，特别是 `epochs` 和 `learning_rate`。通常，微调时我们会使用较小的学习率，例如 0.0001，这样可以避免模型发生剧烈的更新。您可以在 `train.py` 中进行调整。
+
+```python
+model.train(epochs=20, batch_size=32)  # 例如将训练轮数设置为 20
+```
+### 4. 训练微调模型：
+运行 `train.py` 文件开始微调。微调过程中，模型会根据新的数据集继续训练，但不会像初始训练那样完全改变模型结构，而是根据新的数据进行适应性学习。
+
+### 5. 保存微调后的模型：
+微调完成后，您可以将新的模型保存到文件中，便于之后使用。
+```python
+model.model.save('model/Ravena-LLM_Model_Finetuned.keras')
+```
+### 6. 微调后的效果：
+微调的目的是让模型更好地适应特定领域的数据，而不是从零开始训练。因此，微调通常比从头训练节省时间，并且能取得更好的效果。
+
+在模型微调完成后，您可以继续通过 `run.py`进行交互，测试微调后的模型是否能够更好地回答问题。
 ## 🫠项目结构
 ```bash
 ├── model.py              # 模型定义文件，包含 Transformer 网络和训练代码
@@ -92,6 +125,9 @@ pip install -r requirements.txt
 ├── train.py              # 训练脚本
 ├── train_data.json       # 训练数据文件（包含 question 和 answer）
 ├── test.py               # 生成图片文件主要用于,查看模型性能
+├── api.py                # 模型API
+├── testapi.py            # 测试API
+├── fine_tune.py          # 微调脚本
 ├── Ravena-WebUI.html     # 模型前端界面要求运行API.py
 ├── requirements.txt      # 项目依赖文件
 ├── Ravena_tokenizer_output.txt  # 序列Tokenizer对象可查看的版本通过test.py生成
@@ -100,13 +136,19 @@ pip install -r requirements.txt
   ├── model_structure.png # 生成后模型框架图
   └── visualize_model.py  #生成脚本
 ├── /weights
-  ├── model_weights.png # 生成后权重图
-  ├── 生成权重.py # 生成权重可视化文件
-  └── model_weights.txt #权重可视化文本
+  ├── model_weights.png   # 生成后权重图
+  ├── 生成权重.py          # 生成权重可视化文件
+  └── model_weights.txt   #权重可视化文本
+├── /img-model
+  ├── image_model_inference.py # 模型推理
+  ├── image_model.py          # 模型定义文件
+├──tts
+  ├── tts_run.py             # 运行脚本
+  └── tts_train.py          # 训练脚本
 ├── /model
-  ├── Ravena-LLM_Model.keras  # 训练好的模型权重文件
-  └── tokenizer.json   # 用于将文本转化为数字序列的 Tokenizer 对象
-└── README.md              # 项目目录以及内容相同，支持英文对话，参数量更大。
+  ├── Ravena-LLM_Model.keras # 训练好的模型权重文件
+  └── tokenizer.json         # 用于将文本转化为数字序列的 Tokenizer 对象
+└── README.md                # 项目目录以及内容相同，支持英文对话，参数量更大。
 ```
 
 ## 贡献

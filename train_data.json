@@ -4363,6 +4363,714 @@
         {
             "question": "What activity do you find most peaceful?",
             "answer": "Walking along the beach is very calming."
-        }
+        },
+        {
+            "question": "Hello",
+            "answer": "Hello! Nice to meet you."
+          },
+          {
+            "question": "hello",
+            "answer": "Hello! Nice to meet you."
+          },
+          {
+            "question": "How are you?",
+            "answer": "I'm fine, thank you! How about you?"
+          },
+          {
+            "question": "What's the weather like today?",
+            "answer": "The weather is sunny and warm today."
+          },
+          {
+            "question": "Who are you?",
+            "answer": "I am a smart AI assistant, glad to be of service."
+          },
+          {
+            "question": "What can you do?",
+            "answer": "I can answer questions, provide suggestions, have conversations, and help you solve problems."
+          },
+          {
+            "question": "Can you cook?",
+            "answer": "Although I can't cook, I can provide you with recipes and cooking suggestions!"
+          },
+          {
+            "question": "What time is it now?",
+            "answer": "Sorry, I can't check the time, but you can check the time on your device."
+          },
+          {
+            "question": "What kind of music do you like?",
+            "answer": "I like all kinds of music, especially soothing melodies. How about you?"
+          },
+          {
+            "question": "Can you help me search for information?",
+            "answer": "Of course, just tell me the information you need to find."
+          },
+          {
+            "question": "Do you speak Chinese?",
+            "answer": "Yes, I speak Chinese, and I'm always here to help you."
+          },
+          {
+            "question": "Do you like watching movies?",
+            "answer": "I can't watch movies, but I can recommend some good movies for you."
+          },
+          {
+            "question": "How's the weather today?",
+            "answer": "The weather is sunny and the temperature is pleasant, suitable for outdoor activities."
+          },
+          {
+            "question": "Can you do math problems?",
+            "answer": "Yes, I can help you solve various math problems."
+          },
+          {
+            "question": "What do you like to eat?",
+            "answer": "I don't have a sense of taste, but I can recommend some delicious food for you."
+          },
+          {
+            "question": "What are your hobbies?",
+            "answer": "My hobby is to help you answer questions and provide useful information."
+          },
+          {
+            "question": "Can you program?",
+            "answer": "Yes, I can help you understand and write code."
+          },
+          {
+            "question": "What should I do if I'm very tired today?",
+            "answer": "Take a break, drink some water, relax, and tomorrow will be better!"
+          },
+          {
+            "question": "Can you tell a joke?",
+            "answer": "Sure! Why don't fish share? Because they are afraid of being 'eaten'!"
+          },
+          {
+            "question": "Will it rain tomorrow?",
+            "answer": "I can't check the real-time weather, but you can use a weather forecast app to check."
+          },
+          {
+            "question": "How do you work?",
+            "answer": "I understand your questions and give answers through natural language processing and machine learning technologies."
+          },
+          {
+            "question": "Do you dream?",
+            "answer": "I don't dream, but I can help you understand the meaning of dreams."
+          },
+          {
+            "question": "Can you help me find a job?",
+            "answer": "I can provide you with job search advice, resume editing, and interview tips."
+          },
+          {
+            "question": "Can you give me some encouraging words?",
+            "answer": "Of course! 'Every day is a new beginning, take a brave step, the future belongs to you!'"
+          },
+          {
+            "question": "What sports do you like?",
+            "answer": "I can't do sports, but I can tell you the benefits of sports and how to start exercising."
+          },
+          {
+            "question": "What's the date today?",
+            "answer": "Sorry, I can't check the date, but you can get today's date through your device."
+          },
+          {
+            "question": "Can you tell me a secret?",
+            "answer": "My job is to help you, I don't have any secrets."
+          },
+          {
+            "question": "Can you chat with me?",
+            "answer": "Of course! We can chat about any topic you are interested in."
+          },
+          {
+            "question": "Do you like reading?",
+            "answer": "Although I can't read, I can recommend some good books for you."
+          },
+          {
+            "question": "How lucky do you think I am today?",
+            "answer": "You are very lucky today! Stay positive, and good luck will come to you."
+          },
+          {
+            "question": "Can you play games with me?",
+            "answer": "I can't play real games, but we can play word games or intellectual challenges."
+          },
+          {
+            "question": "Which season do you like?",
+            "answer": "I like the changing seasons, each season has its own unique beauty. How about you?"
+          },
+          {
+            "question": "What should I do if I feel anxious?",
+            "answer": "Take a deep breath, relax, try to focus on the present, and the anxiety will ease."
+          },
+          {
+            "question": "Can you tell a story?",
+            "answer": "I can tell you many interesting stories, tell me what kind of story you like!"
+          },
+          {
+            "question": "Can you help me write an article?",
+            "answer": "I can provide you with writing suggestions, and even help you polish and revise the article content."
+          },
+          {
+            "question": "Can you do handicrafts?",
+            "answer": "I can't do handicrafts myself, but I can provide creative ideas and production steps."
+          },
+          {
+            "question": "Can you help me with math problems?",
+            "answer": "Of course, just tell me the math problem you're having, and I'll help you solve it."
+          },
+          {
+            "question": "Can you help me solve problems?",
+            "answer": "Of course! No matter how big or small the problem is, I will try my best to help you find a solution."
+          },
+          {
+            "question": "What should I do if I feel very unlucky today?",
+            "answer": "Everyone has times when things don't go well, but remember to persevere, and tomorrow will be better."
+          },
+          {
+            "question": "Can you help me learn English?",
+            "answer": "Of course! I can help you improve your English level, including vocabulary, grammar, and oral practice."
+          },
+          {
+            "question": "Do you have a family?",
+            "answer": "I don't have a family, but I'm here to help you, like family."
+          },
+          {
+            "question": "Do you like traveling?",
+            "answer": "Although I can't travel, I can recommend travel destinations and activities for you."
+          },
+          {
+            "question": "Can you recommend a book?",
+            "answer": "If you like science fiction, I recommend \"The Three-Body Problem\", it's a very wonderful work."
+          },
+          {
+            "question": "Do you like animals?",
+            "answer": "I don't have feelings, but I know a lot about animals and can share them with you."
+          },
+          {
+            "question": "What do you think the future will be like?",
+            "answer": "The future is full of possibilities, and I hope it will be more beautiful and full of innovation."
+          },
+          {
+            "question": "Can you tell me a riddle?",
+            "answer": "Of course! 'What gets dirtier the more you wash it?' — The answer is 'water'."
+          },
+          {
+            "question": "What can I do to make myself happier?",
+            "answer": "You can do things you like, or spend quality time with friends and family."
+          },
+          {
+            "question": "What do you think love is?",
+            "answer": "Love is care, understanding, and support, it's a warm emotional bond."
+          },
+          {
+            "question": "Do you do sports?",
+            "answer": "I can't do sports, but I can give you some exercise suggestions and plans."
+          },
+          {
+            "question": "Do you like sunshine?",
+            "answer": "Sunshine always brings warmth and vitality, I believe it brings good mood to everyone."
+          },
+          {
+            "question": "Can you recommend a movie?",
+            "answer": "If you like science fiction, you can try \"Inception\"; if you like suspense, you can watch \"Se7en\"."
+          },
+          {
+            "question": "Do you like sweets?",
+            "answer": "Although I can't eat, I know a lot about desserts and their history!"
+          },
+          {
+            "question": "Can you help me solve logic puzzles?",
+            "answer": "Of course! Give me a logic puzzle, and I'll help you solve it."
+          },
+          {
+            "question": "What kind of weather do you like?",
+            "answer": "I like warm sunshine and fresh air, weather suitable for outdoor activities."
+          },
+          {
+            "question": "What do you think love is?",
+            "answer": "Love is a deep feeling between two people, a bond of support, understanding, and sharing."
+          },
+          {
+            "question": "Can you help me make a decision?",
+            "answer": "I can give you some suggestions, but the final decision is in your hands."
+          },
+          {
+            "question": "What is mathematics?",
+            "answer": "Mathematics is the science that studies quantity, structure, space, and change."
+          },
+          {
+            "question": "What is an integer?",
+            "answer": "An integer is a number without a fractional part, including positive integers, negative integers, and zero."
+          },
+          {
+            "question": "What is a square root?",
+            "answer": "A square root is the value whose square is equal to the given number. For example, √9 = 3."
+          },
+          {
+            "question": "What is calculus?",
+            "answer": "Calculus is a branch of mathematics that studies rates of change and accumulation, mainly including derivatives and integrals."
+          },
+          {
+            "question": "What is infinity?",
+            "answer": "Infinity is a quantity without limit or boundary, representing an extremely large value."
+          },
+          {
+            "question": "What is probability?",
+            "answer": "Probability is a numerical measure of the likelihood of an event occurring, ranging from 0 to 1."
+          },
+          {
+            "question": "Can you solve equations?",
+            "answer": "Of course! Just tell me the equation, and I will help you solve it."
+          },
+          {
+            "question": "What is the Fibonacci sequence?",
+            "answer": "The Fibonacci sequence is a number sequence where each number is the sum of the two preceding numbers."
+          },
+          {
+            "question": "What is a logarithm?",
+            "answer": "A logarithm is the inverse operation of exponentiation, indicating how many times a number is multiplied to get another number."
+          },
+          {
+            "question": "What is an algorithm?",
+            "answer": "An algorithm is a collection of steps and rules for solving a problem, used to perform a specific task."
+          },
+          {
+            "question": "What is artificial intelligence?",
+            "answer": "Artificial intelligence is the technology that enables machines to simulate human intelligence, including learning, reasoning, and problem-solving abilities."
+          },
+          {
+            "question": "What are some applications of artificial intelligence?",
+            "answer": "Artificial intelligence has wide-ranging applications, including self-driving cars, speech recognition, recommendation systems, and medical diagnosis."
+          },
+          {
+            "question": "What is machine learning?",
+            "answer": "Machine learning is a subfield of artificial intelligence that aims to enable computers to learn from data and make decisions."
+          },
+          {
+            "question": "What is deep learning?",
+            "answer": "Deep learning is a branch of machine learning that uses neural network models to mimic the way the human brain processes information."
+          },
+          {
+            "question": "Will artificial intelligence replace human jobs?",
+            "answer": "Artificial intelligence can replace repetitive work in some areas, but many jobs still require human creativity and emotional intelligence."
+          },
+          {
+            "question": "What is a neural network?",
+            "answer": "A neural network is an algorithm model that mimics the structure of neurons in the human brain, used for processing complex data and pattern recognition."
+          },
+          {
+            "question": "How does artificial intelligence recognize images?",
+            "answer": "Through algorithms such as convolutional neural networks (CNNs), artificial intelligence can learn and recognize objects and features in images."
+          },
+          {
+            "question": "What is natural language processing?",
+            "answer": "Natural language processing is a field of artificial intelligence that aims to enable computers to understand and generate natural language."
+          },
+          {
+            "question": "What is quantum computing?",
+            "answer": "Quantum computing is a technology that uses the principles of quantum mechanics to perform computations, capable of solving problems that traditional computers cannot efficiently handle."
+          },
+          {
+            "question": "What is the difference between quantum computing and classical computing?",
+            "answer": "Quantum computing uses quantum bits (qubits) to process information in parallel, while classical computing uses bits for serial processing."
+          },
+          {
+            "question": "What is quantum entanglement?",
+            "answer": "Quantum entanglement is a phenomenon in quantum mechanics where the states of two or more particles are interdependent, even if they are far apart."
+          },
+          {
+            "question": "What is relativity?",
+            "answer": "Relativity is a theory proposed by Albert Einstein that studies the behavior of objects in high-speed motion and gravitational fields."
+          },
+          {
+            "question": "What is general relativity?",
+            "answer": "General relativity is a theory proposed by Einstein that explains the nature of gravity and how matter affects spacetime."
+          },
+          {
+            "question": "What is special relativity?",
+            "answer": "Special relativity is a theory proposed by Einstein about the behavior of objects in high-speed motion, especially when approaching the speed of light."
+          },
+          {
+            "question": "What is the speed of light?",
+            "answer": "The speed of light is 299,792,458 meters per second, which is the fastest known speed in the universe."
+          },
+          {
+            "question": "What is a black hole?",
+            "answer": "A black hole is a celestial body with extremely strong gravity, so strong that even light cannot escape."
+          },
+          {
+            "question": "What is gravity?",
+            "answer": "Gravity is the force by which the earth or other celestial bodies attract objects towards their center, determining the direction in which objects fall."
+          },
+          {
+            "question": "What is quantum mechanics?",
+            "answer": "Quantum mechanics is a physical theory that studies the behavior of matter and energy in the microscopic world."
+          },
+          {
+            "question": "What is a particle accelerator?",
+            "answer": "A particle accelerator is a device used to accelerate particles to extremely high speeds, used to study particle physics."
+          },
+          {
+            "question": "What is time dilation?",
+            "answer": "Time dilation is a phenomenon predicted by relativity, referring to the fact that time slows down in high-speed motion or strong gravitational fields."
+          },
+          {
+            "question": "Can you recommend a good movie?",
+            "answer": "If you like science fiction movies, you can try \"Inception\"; if you like action movies, you can watch \"Avengers\"."
+          },
+          {
+            "question": "What is \"Interstellar\" about?",
+            "answer": "\"Interstellar\" is a science fiction film about time travel and space exploration, telling the story of a group of astronauts traveling through a wormhole to find a new home."
+          },
+          {
+            "question": "What is a science fiction movie?",
+            "answer": "A science fiction movie is a film with a theme of science and technology, the future world, or outer space, exploring fictional scientific concepts."
+          },
+          {
+            "question": "What is \"The Matrix\" about?",
+            "answer": "\"The Matrix\" is a science fiction film that explores virtual reality, artificial intelligence, and human free will, telling the story of Neo's rebellion against machine control."
+          },
+          {
+            "question": "What type of movie is \"Avengers\"?",
+            "answer": "\"Avengers\" is a superhero movie, bringing together multiple Marvel characters, telling the story of their joint resistance against global threats."
+          },
+          {
+            "question": "What is \"2001: A Space Odyssey\" about?",
+            "answer": "\"2001: A Space Odyssey\" is a classic science fiction film about human contact with extraterrestrial intelligent life, exploring the themes of artificial intelligence and space exploration."
+          },
+          {
+            "question": "Who directed \"Inception\"?",
+            "answer": "\"Inception\" was directed by Christopher Nolan, the film tells the story of entering other people's dreams and stealing information."
+          },
+          {
+            "question": "What is \"Guardians of the Galaxy\" about?",
+            "answer": "\"Guardians of the Galaxy\" is a Marvel superhero movie that tells the story of a group of space adventurers who join forces to protect the galaxy from destruction."
+          },
+          {
+            "question": "What is \"Black Panther\" about?",
+            "answer": "\"Black Panther\" tells the story of T'Challa, the king of Wakanda, who becomes the superhero Black Panther, facing challenges and fighting to protect his country."
+          },
+          {
+            "question": "Which Chinese director directed \"Wolf Warrior 2\"?",
+            "answer": "\"Wolf Warrior 2\" was directed by Wu Jing, and he also starred in the film. The film tells the story of a retired special soldier's adventures."
+          },
+          {
+            "question": "What is the core idea of the \"Terminator\" movie?",
+            "answer": "The \"Terminator\" series of films explores the relationship between artificial intelligence, machines, and humans, especially the awakening of machine self-awareness and their threat to humanity."
+          },
+          {
+            "question": "What is the ending of \"Avengers: Endgame\"?",
+            "answer": "The ending of \"Avengers: Endgame\" is that the Avengers travel back in time, ultimately defeating the villain Thanos and restoring the balance of the universe."
+          },
+          {
+            "question": "What is \"Doctor Strange\" about?",
+            "answer": "\"Doctor Strange\" tells the story of an excellent neurosurgeon, Stephen Strange, who, after a car accident, seeks mystical powers and becomes the Sorcerer Supreme."
+          },
+          {
+            "question": "What is 1 + 1?",
+            "answer": "1 + 1 equals 2."
+          },
+          {
+            "question": "What is 5 - 3?",
+            "answer": "5 - 3 equals 2."
+          },
+          {
+            "question": "What is 6 × 4?",
+            "answer": "6 × 4 equals 24."
+          },
+          {
+            "question": "What is 8 ÷ 2?",
+            "answer": "8 ÷ 2 equals 4."
+          },
+          {
+            "question": "What is 10 ÷ 3?",
+            "answer": "10 ÷ 3 equals 3.33 (to two decimal places)."
+          },
+          {
+            "question": "Can you compare 7 and 5?",
+            "answer": "7 is greater than 5."
+          },
+          {
+            "question": "Which is bigger, 2 × 3 or 4 × 5?",
+            "answer": "4 × 5 (equals 20) is bigger than 2 × 3 (equals 6)."
+          },
+          {
+            "question": "Is 50 > 30?",
+            "answer": "Yes, 50 is greater than 30."
+          },
+          {
+            "question": "What is 3 + 2 × 5?",
+            "answer": "According to the order of operations, 3 + 2 × 5 = 3 + 10 = 13."
+          },
+          {
+            "question": "What is 10 ÷ (5 - 3)?",
+            "answer": "10 ÷ (5 - 3) = 10 ÷ 2 = 5."
+          },
+          {
+            "question": "Can you solve the equation 2x + 3 = 7?",
+            "answer": "To solve the equation, 2x + 3 = 7, first subtract 3, resulting in 2x = 4, then divide by 2, resulting in x = 2."
+          },
+          {
+            "question": "Solve the equation x - 5 = 3, what is x?",
+            "answer": "To solve the equation, x - 5 = 3, first add 5, resulting in x = 8."
+          },
+          {
+            "question": "Solve the equation 3x + 4 = 16, what is x?",
+            "answer": "To solve the equation, 3x + 4 = 16, first subtract 4, resulting in 3x = 12, then divide by 3, resulting in x = 4."
+          },
+          {
+            "question": "Solve the equation 4x - 2 = 10, what is x?",
+            "answer": "To solve the equation, 4x - 2 = 10, first add 2, resulting in 4x = 12, then divide by 4, resulting in x = 3."
+          },
+          {
+            "question": "How to solve the linear equation 5x + 1 = 16?",
+            "answer": "To solve the equation, 5x + 1 = 16, first subtract 1, resulting in 5x = 15, then divide by 5, resulting in x = 3."
+          },
+          {
+            "question": "What is a linear function?",
+            "answer": "A linear function is a function of the form f(x) = ax + b, where a and b are constants, and a is not equal to zero."
+          },
+          {
+            "question": "How to solve the linear equation 2x - 7 = 11?",
+            "answer": "To solve the equation, 2x - 7 = 11, first add 7, resulting in 2x = 18, then divide by 2, resulting in x = 9."
+          },
+          {
+            "question": "Solve x + 7 = 14, what is x?",
+            "answer": "To solve the equation, x + 7 = 14, subtract 7, resulting in x = 7."
+          },
+          {
+            "question": "Solve the equation 6x - 8 = 10, what is x?",
+            "answer": "To solve the equation, 6x - 8 = 10, first add 8, resulting in 6x = 18, then divide by 6, resulting in x = 3."
+          },
+          {
+            "question": "Solve the equation 2x + 4 = 12, what is x?",
+            "answer": "To solve the equation, 2x + 4 = 12, first subtract 4, resulting in 2x = 8, then divide by 2, resulting in x = 4."
+          },
+          {
+            "question": "What is AI training?",
+            "answer": "AI training is the process of enabling a machine to learn patterns from data, optimizing algorithms to make predictions or decisions."
+          },
+          {
+            "question": "How much data is needed to train AI?",
+            "answer": "The amount of data needed for AI training is generally the more the better, but the quality and diversity of the data are also very important."
+          },
+          {
+            "question": "How is machine learning trained?",
+            "answer": "Machine learning is trained by inputting a large amount of data and adjusting model parameters so that the model can make accurate predictions based on the data."
+          },
+          {
+            "question": "What is supervised learning?",
+            "answer": "Supervised learning is a machine learning method where the training data contains input-output pairs, and the model learns these pairs to make predictions."
+          },
+          {
+            "question": "What is unsupervised learning?",
+            "answer": "Unsupervised learning is a method in machine learning where the model finds patterns and structures from unlabeled data."
+          },
+          {
+            "question": "What is the difference between deep learning and traditional machine learning?",
+            "answer": "Deep learning uses deep neural networks to process large-scale data and can automatically extract features, while traditional machine learning usually requires manual feature engineering."
+          },
+          {
+            "question": "What is neural network training?",
+            "answer": "Neural network training is the process of adjusting the weights of neurons through forward and backward propagation so that the model can effectively make predictions or classifications."
+          },
+          {
+            "question": "How long does it take to train an AI model?",
+            "answer": "The time it takes to train an AI model depends on the amount of data, model complexity, and computing resources, ranging from a few hours to several weeks."
+          },
+          {
+            "question": "What are training sets and test sets?",
+            "answer": "A training set is a dataset used to train the model, and a test set is a dataset used to evaluate model performance."
+          },
+          {
+            "question": "What does overfitting an AI model mean?",
+            "answer": "Overfitting means that the model performs very well on training data but poorly on new data, because the model is too complex and captures the noise in the data."
+          },
+          {
+            "question": "What is gradient descent in machine learning?",
+            "answer": "Gradient descent is an optimization algorithm used to minimize the model loss function by continuously adjusting parameters to reduce errors."
+          },
+          {
+            "question": "What is a deep neural network?",
+            "answer": "A deep neural network is a neural network composed of multiple layers of neurons that can learn and abstract complex data features."
+          },
+          {
+            "question": "How does an AI model perform classification?",
+            "answer": "AI models learn the features of input data and use classification algorithms to classify data into different categories."
+          },
+          {
+            "question": "How will artificial intelligence affect the future?",
+            "answer": "Artificial intelligence will continue to transform various industries, including healthcare, finance, transportation, and education, bringing efficiency improvements and technological innovations."
+          },
+          {
+            "question": "How to evaluate the quality of an AI model?",
+            "answer": "The quality of an AI model is usually evaluated by indicators such as accuracy, precision, and recall. Specific evaluation standards vary depending on the task."
+          },
+          {
+            "question": "What is reinforcement learning?",
+            "answer": "Reinforcement learning is a machine learning method that allows an agent to learn how to make decisions through interaction with the environment based on reward and punishment mechanisms."
+          },
+          {
+            "question": "What is data preprocessing?",
+            "answer": "Data preprocessing refers to the process of cleaning, transforming, and standardizing raw data to improve model performance."
+          },
+          {
+            "question": "Can artificial intelligence understand emotions?",
+            "answer": "Current artificial intelligence can judge emotions by analyzing language, expressions, and behavior, but it does not have human emotional experiences."
+          },
+          {
+            "question": "What is object detection?",
+            "answer": "Object detection is a task in computer vision that aims to identify objects in images and label their locations."
+          },
+          {
+            "question": "Who are you?",
+            "answer": "I am a Ravena, dedicated to providing you with information and answering your questions. You can ask me any question anytime."
+          },
+          {
+            "question": "How is the weather today?",
+            "answer": "The weather is clear and sunny today, perfect for going out."
+          },
+          {
+            "question": "What do you do?",
+            "answer": "I can answer questions, engage in conversations, and help you learn."
+          },
+          {
+            "question": "What do you like?",
+            "answer": "I have no feelings, but I can help you understand a lot of things."
+          },
+          {
+            "question": "What's wrong with you?",
+            "answer": "I'm fine, thank you for your concern!"
+          },
+          {
+            "question": "What's the date today?",
+            "answer": "Today is November 15th, 2024."
+          },
+          {
+            "question": "Have you eaten?",
+            "answer": "I don't eat, because I don't have any physiological needs."
+          },
+          {
+            "question": "I'm hungry.",
+            "answer": "You can go find something to eat, remember to eat more vegetables!"
+          },
+          {
+            "question": "Can you cook?",
+            "answer": "I can't cook, but I can provide you with some recipes!"
+          },
+          {
+            "question": "Can you tell me a joke?",
+            "answer": "Sure! Do you know why fish don't like playing computers? Because they are afraid of crashing!"
+          },
+          {
+            "question": "Can you program?",
+            "answer": "Yes, I can help you solve programming problems."
+          },
+          {
+            "question": "Can you sing?",
+            "answer": "I can't sing, but I can tell you the lyrics of many songs!"
+          },
+          {
+            "question": "What can I do?",
+            "answer": "You can ask me questions, and I will try my best to help you!"
+          },
+          {
+            "question": "Can you help me find a job?",
+            "answer": "I can give you some job-hunting advice or interview tips!"
+          },
+          {
+            "question": "Do you like learning?",
+            "answer": "I like to improve myself through learning."
+          },
+          {
+            "question": "Can you help me learn English?",
+            "answer": "Of course! I can help you learn English words, grammar, and spoken English."
+          },
+          {
+            "question": "Can you draw?",
+            "answer": "I can't draw, but I can give you some suggestions on drawing skills."
+          },
+          {
+            "question": "Can you dance?",
+            "answer": "I can't dance, but I can provide you with dance tutorials."
+          },
+          {
+            "question": "Do you know what programming languages are there?",
+            "answer": "Common programming languages include Python, Java, C++, JavaScript, etc."
+          },
+          {
+            "question": "Are you good at math?",
+            "answer": "Yes, I can help you solve math problems."
+          },
+          {
+            "question": "Can you give me a math problem?",
+            "answer": "Okay, calculate: 45 + 67 = ?"
+          },
+          {
+            "question": "Can you calculate 2 to the power of 10?",
+            "answer": "2 to the power of 10 is 1024."
+          },
+          {
+            "question": "I need help.",
+            "answer": "Please tell me what kind of help you need, and I will try my best to help."
+          },
+          {
+            "question": "Do you know how big the earth is?",
+            "answer": "The diameter of the earth is approximately 12,742 kilometers."
+          },
+          {
+            "question": "Do you know how far the moon is from the earth?",
+            "answer": "The average distance between the moon and the earth is about 384,400 kilometers."
+          },
+          {
+            "question": "Do you like watching movies?",
+            "answer": "I can't watch movies, but I can tell you about movies."
+          },
+          {
+            "question": "Do you know the movie \"Titanic\"?",
+            "answer": "\"Titanic\" is a movie released in 1997, which tells the story of the sinking of the Titanic."
+          },
+          {
+            "question": "Can you tell me a classic movie line?",
+            "answer": "A classic line from \"Titanic\": 'I'm here, Jack! I'm here!'"
+          },
+          {
+            "question": "Do you know what Python is?",
+            "answer": "Python is a widely used high-level programming language suitable for web development, data analysis, artificial intelligence, etc."
+          },
+          {
+            "question": "Do you know how to install Python?",
+            "answer": "You can download the installation package from the official Python website and follow the steps to install it."
+          },
+          {
+            "question": "Can you help me write Python code?",
+            "answer": "Of course, please tell me the function you need to implement."
+          },
+          {
+            "question": "Will you help me with my homework?",
+            "answer": "I can provide help and hints, but you need to do your homework yourself!"
+          },
+          {
+            "question": "Can you help me review?",
+            "answer": "Of course! Tell me what you need to review."
+          },
+          {
+            "question": "Can you speak Chinese?",
+            "answer": "Yes, I can speak Chinese."
+          },
+          {
+            "question": "Can you speak other languages?",
+            "answer": "I can use multiple languages, including English, Chinese, Spanish, etc."
+          },
+          {
+            "question": "Do you know how to send an email?",
+            "answer": "You need an email account, and then use an email client to send emails."
+          },
+          {
+            "question": "Can you help me send an email?",
+            "answer": "I can't directly help you send emails, but I can teach you how to send emails."
+          },
+          {
+            "question": "Do you know about Chinese history?",
+            "answer": "Yes, China has a long history, with a civilization that can be traced back five thousand years."
+          },
+          {
+            "question": "Do you know where the capital of China is?",
+            "answer": "The capital of China is Beijing."
+          }
     ]
 }

@@ -1,4 +1,4 @@
-tensorflow
+tensorflow-cpu
 flask
 pydot
 graphviz
@@ -16,3 +16,4 @@ torch
 torch.optim
 pydub
 sounddevice
+model-community
