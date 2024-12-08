@@ -127,17 +127,14 @@
             const userInput = inputField.value.trim();
             if (userInput === '') return;
 
-            // 添加用户消息
             const chat = document.getElementById('chat');
             const userMessageDiv = document.createElement('div');
             userMessageDiv.className = 'message';
             userMessageDiv.innerHTML = `<div class="user-message">${userInput}</div>`;
             chat.appendChild(userMessageDiv);
 
-            // 清空输入框
             inputField.value = '';
 
-            // 发起请求到后端API
             fetch('http://localhost:5000/ask', {
                 method: 'POST',
                 "headers": {
@@ -148,13 +145,11 @@
             })
             .then(response => response.json())
             .then(data => {
-                // 添加AI的回答
                 const aiMessageDiv = document.createElement('div');
                 aiMessageDiv.className = 'message';
                 aiMessageDiv.innerHTML = `<div class="ai-message">${data.answer}</div>`;
                 chat.appendChild(aiMessageDiv);
                 
-                // 滚动到最新消息
                 chat.scrollTop = chat.scrollHeight;
             })
             .catch(error => {
@@ -172,7 +167,7 @@
 
         function clearHistory() {
             const chat = document.getElementById('chat');
-            chat.innerHTML = '';  // 清空聊天记录
+            chat.innerHTML = '';  
             alert("历史记录已清除。");
         }
     </script>
