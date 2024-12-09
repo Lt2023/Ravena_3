@@ -1,7 +1,7 @@
 import json
 from termcolor import colored
 
-def display_tokenizer(tokenizer_file='model/.tokenizer.json', output_file='Ravena_tokenizer_output.txt'):
+def display_tokenizer(tokenizer_file='model/tokenizer.json', output_file='Ravena_tokenizer_output.txt'):
     
 
     try:
