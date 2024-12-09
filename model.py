@@ -25,7 +25,7 @@ synonyms_dict = {
     "再见": ["拜拜", "再会", "回见", "再见了", "告别"],
     "问题": ["疑问", "询问", "挑战", "难题", "困惑"],
     "答案": ["解答", "回复", "答复", "回应", "解决方案"],
-       "怎么样": ["如何", "怎么样", "如何做", "如何应对", "如何处理"],
+   "怎么样": ["如何", "怎么样", "如何做", "如何应对", "如何处理"],
     "今天": ["今日", "今天", "今天早上", "这天", "今日一日"],
     "吃": ["进食", "用餐", "吃饭", "进餐", "用膳"],
     "喜欢": ["偏爱", "喜好", "爱好", "钟情", "热爱"],
@@ -358,13 +358,13 @@ class PositionalEncoding(Layer):
         self.model_dim = model_dim
 
     def call(self, inputs):
-        position = np.arange(self.max_len)[:, np.newaxis]
+        position = np.arange(self.max_len)[:, np.newaxis]  # 获取位置编码
         div_term = np.exp(np.arange(0, self.model_dim, 2) * -(np.log(10000.0) / self.model_dim))
         pe = np.zeros((self.max_len, self.model_dim))
-        pe[:, 0::2] = np.sin(position * div_term)
-        pe[:, 1::2] = np.cos(position * div_term)
+        pe[:, 0::2] = np.sin(position * div_term)  # 偶数维度使用sin
+        pe[:, 1::2] = np.cos(position * div_term)  # 奇数维度使用cos
         pe = pe[np.newaxis, ...]
-        return inputs + tf.cast(pe, tf.float32)
+        return inputs + tf.cast(pe, tf.float32)  # 输入加上位置编码
 
 # 语言模型类
 class LanguageModel:
@@ -372,29 +372,29 @@ class LanguageModel:
         self.vocab_size = vocab_size
         self.max_seq_length = max_seq_length
         self.data_file = data_file
-        self.model_file = model_file.replace('.h5', '.keras')  
-        self.tokenizer_file = tokenizer_file  
-        self.faq_file = faq_file  
+        self.model_file = model_file.replace('.h5', '.keras')  # 模型文件保存路径
+        self.tokenizer_file = tokenizer_file  # Tokenizer 文件路径
+        self.faq_file = faq_file  # FAQ 文件路径
         self.tokenizer = None
-        self.model = self.build_model()
+        self.model = self.build_model()  # 构建模型
         
         self.faq_data = {}  
-        self.load_data()  
+        self.load_data()  # 加载训练数据
         self.previous_answers = set()
         self.is_trained = False
-        self.faq_data = self.load_faq_data()  
+        self.faq_data = self.load_faq_data()  # 加载FAQ数据
 
     def load_faq_data(self):
-        if os.path.exists(self.faq_file):
+        if os.path.exists(self.faq_file):  # 如果FAQ数据文件存在，加载
             with open(self.faq_file, 'rb') as f:
                 faq_data = pickle.load(f)
         else:
-            faq_data = {}  
+            faq_data = {}  # 否则初始化为空字典
         return faq_data
 
     def save_faq_data(self):
         with open(self.faq_file, 'wb') as f:
-            pickle.dump(self.faq_data, f)
+            pickle.dump(self.faq_data, f)  # 保存FAQ数据
 
     def load_data(self):
         try:
@@ -402,25 +402,29 @@ class LanguageModel:
                 data = json.load(file)
                 self.data = data
         except FileNotFoundError:
-            self.data = {"data": []}
+            self.data = {"data": []}  # 如果数据文件不存在，初始化为空字典
 
         questions = [item['question'] for item in self.data['data']]
         answers = [item['answer'] for item in self.data['data']]
 
+        # 扩充FAQ数据
         for q, a in zip(questions, answers):
             if q not in self.faq_data:  
                 self.faq_data[q] = [a]  
             else:
                 self.faq_data[q].append(a)  
 
-        self.save_faq_data()
+        self.save_faq_data()  # 保存FAQ数据
 
+        # 数据增强
         questions = self.augment_data(questions)
         answers = self.augment_data(answers)
 
+        # 分词处理
         questions = [" ".join(jieba.cut(q)) for q in questions]
         answers = [" ".join(jieba.cut(a)) for a in answers]
 
+        # 如果Tokenizer文件不存在，则训练并保存Tokenizer
         if not os.path.exists(self.tokenizer_file):
             self.tokenizer = Tokenizer(num_words=self.vocab_size)
             self.tokenizer.fit_on_texts(questions + answers)
@@ -428,10 +432,12 @@ class LanguageModel:
             with open(self.tokenizer_file, 'w', encoding='utf-8') as f:
                 json.dump(self.tokenizer.to_json(), f, ensure_ascii=False, indent=4)
         else:
+            # 如果Tokenizer文件已存在，直接加载
             with open(self.tokenizer_file, 'r', encoding='utf-8') as f:
                 tokenizer_json = json.load(f)
                 self.tokenizer = tokenizer_from_json(tokenizer_json)
 
+        # 转换为序列，并进行填充
         self.question_sequences = pad_sequences(self.tokenizer.texts_to_sequences(questions), maxlen=self.max_seq_length)
         self.answer_sequences = [self.tokenizer.texts_to_sequences([a])[0] for a in answers]
         self.answer_sequences = np.array([seq[0] for seq in self.answer_sequences])
@@ -440,12 +446,12 @@ class LanguageModel:
         augmented_data = []
         for item in data:
             words = item.split()
-            random.shuffle(words)  
+            random.shuffle(words)  # 打乱单词顺序
 
             if random.random() > 0.5:
-                words.append(random.choice(words))  
+                words.append(random.choice(words))  # 随机添加单词
             if len(words) > 2 and random.random() > 0.5:
-                words.remove(random.choice(words))  
+                words.remove(random.choice(words))  # 随机删除单词
 
             augmented_data.append(' '.join(words))
         return augmented_data
@@ -454,14 +460,16 @@ class LanguageModel:
         input_layer = Input(shape=(self.max_seq_length,))
         embedding_layer = Embedding(self.vocab_size, 128)(input_layer)
 
+        # 添加位置编码层
         pos_encoding = PositionalEncoding(self.max_seq_length, 128)(embedding_layer)
         x = pos_encoding
-        for _ in range(8):  # 增加 Transformer 层数为 8
+        for _ in range(120):  # 增加 Transformer 层数为 120 层
             attention = MultiHeadAttention(num_heads=8, key_dim=128)(x, x)
             attention = LayerNormalization()(attention)
             attention = Dropout(0.1)(attention)
             x = attention
 
+        # 池化与输出层
         pooling = GlobalAveragePooling1D()(x)
         dropout = Dropout(0.5)(pooling)
         output_layer = Dense(self.vocab_size, activation='softmax')(dropout)
@@ -556,3 +564,20 @@ class LanguageModel:
         text = re.sub(r'\n', ' ', text)  
         text = text.strip()
         return text
+
+    # ------------------ GPU 训练和推理的设置 -------------------
+    def set_gpu_memory_growth(self):
+        """设置 TensorFlow 在 GPU 上动态分配显存"""
+        physical_devices = tf.config.list_physical_devices('GPU')
+        if len(physical_devices) > 0:
+            for device in physical_devices:
+                tf.config.experimental.set_memory_growth(device, True)
+            print("GPU memory growth enabled.")
+
+    def use_gpu(self):
+        """检查是否有 GPU 可用并启用"""
+        if tf.config.list_physical_devices('GPU'):
+            print("GPU is available.")
+            self.set_gpu_memory_growth()
+        else:
+            print("GPU is not available, using CPU.")

@@ -5,7 +5,7 @@ import json
 BASE_URL = "http://localhost:5000"
 
 # 模拟的 CA 验证值，可以替换为有效的 CA 或无效的 CA 进行测试
-CA_VALID = "820d0663-42ed-47eb-8513-94da54b6fc10"   # 替换为有效的 CA 值
+CA_VALID = ""   # 替换为有效的 CA 值
 CA_INVALID = "invalid-ca-value"    # 用一个无效的 CA 值测试失败的情况
 
 # 简化的测试函数：验证 CA 成功的情况
