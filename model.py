@@ -20,7 +20,7 @@ init(autoreset=True)
 
 # 定义一些常用词语的同义词映射
 synonyms_dict = {
-    "你好": ["您好", "嗨", "早安", "你好啊", "问好"],
+   "你好": ["您好", "嗨", "早安", "你好啊", "问好"],
     "谢谢": ["多谢", "感谢", "感激", "谢谢你", "多谢你"],
     "再见": ["拜拜", "再会", "回见", "再见了", "告别"],
     "问题": ["疑问", "询问", "挑战", "难题", "困惑"],
@@ -366,9 +366,42 @@ class PositionalEncoding(Layer):
         pe = pe[np.newaxis, ...]
         return inputs + tf.cast(pe, tf.float32)  # 输入加上位置编码
 
+# MoE层（Mixture of Experts）
+class MoELayer(Layer):
+    def __init__(self, num_experts, key_dim, num_heads, dropout_rate=0.1):
+        super(MoELayer, self).__init__()
+        self.num_experts = num_experts
+        self.key_dim = key_dim
+        self.num_heads = num_heads
+        self.dropout_rate = dropout_rate
+        
+        # 每个专家的多头注意力层
+        self.attention_experts = [MultiHeadAttention(num_heads=self.num_heads, key_dim=self.key_dim) for _ in range(self.num_experts)]
+        self.layer_norm = LayerNormalization()
+        self.dropout = Dropout(self.dropout_rate)
+        
+    def call(self, inputs):
+        # 输入形状：[batch_size, seq_len, model_dim]
+        batch_size, seq_len, model_dim = inputs.shape
+        expert_outputs = []
+        
+        # 计算每个专家的输出
+        for i in range(self.num_experts):
+            expert_output = self.attention_experts[i](inputs, inputs)
+            expert_outputs.append(expert_output)
+
+        # 对每个专家的输出进行加权平均，这里我们随机选择一个专家来进行计算
+        chosen_expert_idx = tf.random.uniform([batch_size], minval=0, maxval=self.num_experts, dtype=tf.int32)
+        chosen_expert_outputs = tf.gather(expert_outputs, chosen_expert_idx, axis=0)
+
+        # 归一化和dropout
+        x = self.layer_norm(chosen_expert_outputs)
+        x = self.dropout(x)
+        return x
+
 # 语言模型类
 class LanguageModel:
-    def __init__(self, vocab_size=10000, max_seq_length=20, data_file='train_data.json', model_file='model/.Ravena-LLM_Model.h5', tokenizer_file='model/tokenizer.json', faq_file='model/.faq_data.pkl'):
+    def __init__(self, vocab_size=10000, max_seq_length=20, data_file='train_data.json', model_file='model/.Ravena-LLM_Model.h5', tokenizer_file='model/tokenizer.json', faq_file='model/.faq_data.pkl', use_moe=False):
         self.vocab_size = vocab_size
         self.max_seq_length = max_seq_length
         self.data_file = data_file
@@ -376,6 +409,7 @@ class LanguageModel:
         self.tokenizer_file = tokenizer_file  # Tokenizer 文件路径
         self.faq_file = faq_file  # FAQ 文件路径
         self.tokenizer = None
+        self.use_moe = use_moe  # 是否启用 MoE 机制
         self.model = self.build_model()  # 构建模型
         
         self.faq_data = {}  
@@ -463,14 +497,19 @@ class LanguageModel:
         # 添加位置编码层
         pos_encoding = PositionalEncoding(self.max_seq_length, 128)(embedding_layer)
         x = pos_encoding
-        for _ in range(120):  # 增加 Transformer 层数为 120 层
+        
+        # 根据use_moe参数选择是否使用 MoE 机制
+        if self.use_moe:
+            moe_layer = MoELayer(num_experts=8, key_dim=128, num_heads=8)(x)
+        else:
+            # 默认使用普通的 MultiHeadAttention 层
             attention = MultiHeadAttention(num_heads=8, key_dim=128)(x, x)
             attention = LayerNormalization()(attention)
             attention = Dropout(0.1)(attention)
-            x = attention
+            moe_layer = attention
 
         # 池化与输出层
-        pooling = GlobalAveragePooling1D()(x)
+        pooling = GlobalAveragePooling1D()(moe_layer)
         dropout = Dropout(0.5)(pooling)
         output_layer = Dense(self.vocab_size, activation='softmax')(dropout)
 
@@ -512,7 +551,7 @@ class LanguageModel:
 
         seq = pad_sequences(self.tokenizer.texts_to_sequences([input_text]), maxlen=self.max_seq_length)
         generated_seq = list(seq[0])
-        generated_text = ''
+        generated_text = ''  
 
         for _ in range(max_length):
             if len(generated_seq) > self.max_seq_length:
